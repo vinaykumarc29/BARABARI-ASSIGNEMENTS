@@ -1,0 +1,1 @@
+## This repository contains all the assignments which i made during fast tract batch

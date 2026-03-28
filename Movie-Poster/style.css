@@ -1,0 +1,40 @@
+*{
+    background-color: black;
+    padding: 0;
+    margin: 0;
+    font-family:'Poppins';
+    color: white;
+}
+
+
+.hero-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap:90px;
+    padding:20px;
+}
+.poster{
+    width: 200px;
+    height: auto;
+    border-radius: -12px;
+    box-shadow: 0 5px 15px rgba(255, 255, 255, 0.1); 
+}
+
+.poster-card{
+    min-width: 200px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+    flex:1 1 200px;
+}
+
+.poster-card:hover{
+    transform: scale(1.1);
+}
+
+.name ,.rating{
+    font-size: 1.1rem;
+    margin: 10px 0 5px 0;
+
+}

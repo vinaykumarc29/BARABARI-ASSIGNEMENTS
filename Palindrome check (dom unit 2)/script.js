@@ -37,6 +37,7 @@ const reverseString = ()=>{
 const checkPalindrome = () => {
   let str = inputText.value;
   let strLen = str.length;
+   str = str.toLowerCase();
 
   if (strLen == 0) {
     result.textContent = `Please Enter the Text`;

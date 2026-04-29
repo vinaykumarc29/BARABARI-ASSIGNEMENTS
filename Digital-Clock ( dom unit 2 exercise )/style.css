@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #1a1a2e;
+}
+
+.clock-container{
+    height: 300px;
+    text-align: center;
+    background-color: rgb(6, 6, 6);
+    box-shadow: 0 0 10px  rgb(6, 6, 6);
+    color: white;
+    border-radius: 10px;
+}
+
+#time , #date , #btn ,h1 {
+    margin: 10px;
+}
+
+h1{
+    color: red;
+}
+#time{
+    font-size: 5rem;
+    text-shadow: 0 0 10px rgba(233, 69, 96, 0.7)
+}
+
+#date{
+    font-size: 3rem;
+}
+
+#btn{
+    height: 3rem;
+    width: 12rem;
+    border: none;
+    border-radius: 5px;
+    background-color:red;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+#btn:hover{
+    background-color: rgb(197, 5, 5);
+    transform: scale(1.05);
+}

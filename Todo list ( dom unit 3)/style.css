@@ -1,0 +1,275 @@
+/* Root element: Defines CSS variables for colors */
+:root {
+  --primary-color: #3498db;
+  --secondary-color: #2980b9;
+  --danger-color: #e74c3c;
+  --success-color: #2ecc71;
+  --text-color: #333;
+  --light-gray: #f5f5f5;
+  --medium-gray: #ddd;
+  --dark-gray: #888;
+  --white: #fff;
+}
+
+/* Universal selector: Resets margin, padding, and sets box-sizing */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body element: Sets base font, background gradient, text color, and layout */
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: var(--text-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+/* Container class: Styles the main application container */
+.container {
+  background-color: var(--white);
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 500px;
+  overflow: hidden;
+}
+
+/* Header element: Styles the header section */
+header {
+  background-color: var(--primary-color);
+  padding: 20px;
+  color: white;
+  text-align: center;
+}
+
+/* H1 inside header: Styles the main title */
+header h1 {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+/* Icon inside header: Adds margin to the header icon */
+header i {
+  margin-right: 10px;
+}
+
+/* Input container class: Styles the container for the task input and add button */
+.input-container {
+  display: flex;
+  padding: 20px;
+  background-color: var(--white);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+/* Text input element: Styles the task input field */
+input[type="text"] {
+  flex: 1;
+  padding: 12px 15px;
+  border: 2px solid var(--medium-gray);
+  border-radius: 6px 0 0 6px;
+  font-size: 1rem;
+  transition: border-color 0.3s;
+}
+
+/* Text input focus state: Styles the input field when focused */
+input[type="text"]:focus {
+  outline: none;
+  border-color: var(--primary-color);
+}
+
+/* Add task button ID: Styles the button for adding tasks */
+#add-task-btn {
+  background-color: var(--primary-color);
+  color: var(--white);
+  border: none;
+  padding: 12px 20px;
+  border-radius: 0 6px 6px 0;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+/* Add task button hover state: Styles the add button on hover */
+#add-task-btn:hover {
+  background-color: var(--secondary-color);
+}
+
+/* Filters class: Styles the container for filter buttons */
+.filters {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  background-color: var(--light-gray);
+  border-bottom: 1px solid var(--medium-gray);
+}
+
+/* Filter button class: Styles the filter buttons */
+.filter-btn {
+  background: none;
+  border: none;
+  padding: 8px 16px;
+  margin: 0 5px;
+  cursor: pointer;
+  border-radius: 4px;
+  color: var(--dark-gray);
+  font-weight: 500;
+  transition: all 0.2s;
+}
+
+/* Filter button hover state: Styles filter buttons on hover */
+.filter-btn:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+/* Active filter button class: Styles the currently active filter button */
+.filter-btn.active {
+  background-color: var(--primary-color);
+  color: var(--white);
+}
+
+/* Task list ID: Styles the unordered list containing tasks */
+#task-list {
+  list-style-type: none;
+  padding: 0;
+  height: 400px; /* Changed from max-height to fixed height */
+  min-height: 400px; /* Added min-height to maintain constant size */
+  overflow-y: scroll;
+  border-top: 1px solid var(--medium-gray);
+  border-bottom: 1px solid var(--medium-gray);
+}
+
+/* List items inside task list: Styles individual task items */
+#task-list li {
+  display: flex;
+  align-items: center;
+  padding: 15px 20px;
+  border-bottom: 1px solid var(--medium-gray);
+  transition: background-color 0.2s;
+}
+
+/* List item hover state: Styles task items on hover */
+#task-list li:hover {
+  background-color: var(--light-gray);
+}
+
+/* Checkbox inside task list items: Styles the task completion checkbox */
+#task-list li input[type="checkbox"] {
+  margin-right: 15px;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  accent-color: var(--success-color);
+}
+
+/* Span inside task list items: Styles the task text */
+#task-list li span {
+  flex: 1;
+  word-break: break-word;
+  transition: all 0.3s;
+}
+
+/* Completed task span: Styles the text of completed tasks */
+#task-list li span.completed {
+  text-decoration: line-through;
+  color: var(--dark-gray);
+}
+
+/* Delete button class: Styles the delete task button (initially hidden) */
+.delete-btn {
+  background: none;
+  border: none;
+  color: var(--danger-color);
+  cursor: pointer;
+  padding: 5px;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.2s;
+}
+
+/* Delete button visibility on hover: Makes the delete button visible when hovering over a task item */
+#task-list li:hover .delete-btn {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* Empty message class: Styles the message shown when the task list is empty */
+.empty-message {
+  color: var(--dark-gray);
+  text-align: center;
+  padding: 20px;
+  font-style: italic;
+}
+
+/* List footer class: Styles the footer section below the task list */
+.list-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  background-color: var(--light-gray);
+  border-top: 1px solid var(--medium-gray);
+  color: var(--dark-gray);
+  font-size: 0.9rem;
+}
+
+/* Clear completed button ID: Styles the button to clear completed tasks */
+#clear-completed  ,#mark-all-completed{
+  background: none;
+  border: none;
+  color: var(--dark-gray);
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: color 0.2s;
+}
+
+/* Clear completed button hover state: Styles the clear completed button on hover */
+#clear-completed:hover {
+  color: var(--danger-color);
+  text-decoration: underline;
+}
+
+#mark-all-completed:hover {
+  color: var(--success-color);
+  text-decoration: underline;
+}
+
+/* Media query for smaller screens (max-width 600px): Adjusts layout for mobile devices */
+@media (max-width: 600px) {
+  /* Container adjustments for small screens */
+  .container {
+    border-radius: 0;
+    box-shadow: none;
+    height: 100vh;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* Body adjustments for small screens */
+  body {
+    padding: 0;
+  }
+
+  /* Input container adjustments for small screens */
+  .input-container {
+    padding: 15px;
+  }
+
+  /* Task list adjustments for small screens */
+  #task-list {
+    flex: 0;
+    height: 60vh;
+    min-height: 60vh;
+    overflow-y: scroll;
+  }
+
+  /* Header H1 adjustments for small screens */
+  header h1 {
+    font-size: 1.5rem;
+  }
+}

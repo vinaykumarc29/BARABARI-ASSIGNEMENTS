@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Palindrom Checker</title>
+</head>
+<body>
+    <div class="container">
+        <div class="innerContainer">
+            <h1 id="mainHeading">Palindrome Checker & String Reversing</h1>
+            <p id="description">A palindrome is a word, phrase, number, or sequence that reads the same backward as forward (ignoring spaces, punctuation, and capitalization).</p>
+
+            <div id="inputBox">
+                <input type="text" id="inputText">
+                <button id="submitBtn">Check</button>
+            </div>
+
+            <div class="resultBox hidden">
+                <p id="result"></p>
+                <span class="emoji"></span>
+            </div>
+            
+            <div class="extraInfo hidden">
+
+                <span class="originalStr"></span>
+                <span class="reversedStr"></span>
+            </div>
+            <div class="comparisionBox hidden">
+                
+               
+            </div>
+             
+            <div class="examples">
+                <h2>Examples of Palindrome</h2>
+                <ul>
+                    <li>madam</li>
+                    <li>mam</li>
+                    <li>dad</li>
+                    <li>A man, a plan, a canal: Panama</li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

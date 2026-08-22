@@ -1,0 +1,56 @@
+/* Flexbox aligns the checkbox, text, and button in a single row */
+.todo {
+  display: flex;
+  align-items: center;
+  background-color: #f8f9fa;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 12px;
+  border: 1px solid #e1e5e8;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Adds a slight lift effect when hovering over a task */
+.todo:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.todo input[type="checkbox"] {
+  margin-right: 15px;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  accent-color: #0097e6; /* Changes the checkbox color */
+}
+
+.todoText {
+  flex: 1; /* Pushes the delete button all the way to the right */
+  font-size: 1.1rem;
+  color: #2f3640;
+  word-break: break-word; /* Prevents long words from breaking the layout */
+  transition: color 0.3s ease;
+}
+
+/* Styling for when a task is marked complete */
+.todoText.isCompleted {
+  text-decoration: line-through;
+  color: #a4b0be;
+}
+
+.deleteTodoBtn {
+  padding: 8px 14px;
+  background-color: #e84118;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-weight: 500;
+  margin-left: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.deleteTodoBtn:hover {
+  background-color: #c23616;
+}

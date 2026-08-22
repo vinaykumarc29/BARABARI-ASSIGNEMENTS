@@ -1,0 +1,105 @@
+.complaintsContainer{
+    min-height: 92vh;
+    background: #f1f5f9;
+    padding: 40px 80px;
+}
+
+.complaintsContainer h1{
+    text-align: center;
+    font-size: 3rem;
+    color: #1e293b;
+    margin-bottom: 10px;
+}
+
+.complaintsContainer > p{
+    text-align: center;
+    color: #64748b;
+    margin-bottom: 40px;
+}
+
+.status{
+    display: block;
+    margin: 0 auto 40px;
+    width: 180px;
+    height: 40px;
+    border: none;
+    border-radius: 6px;
+    padding: 0 10px;
+    background: white;
+    box-shadow: 0 2px 6px rgba(0,0,0,.08);
+    cursor: pointer;
+}
+
+.complaintCardsContainer{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.complaintCard{
+    width: 400px;
+    background: white;
+    border-radius: 18px;
+    padding: 20px;
+    box-shadow: 0 8px 20px rgba(0,0,0,.08);
+    position: relative;
+}
+
+.complaintCard hr{
+    margin: 15px 0 20px;
+    border: none;
+    border-top: 1px solid #e2e8f0;
+}
+
+.complaintId{
+    font-size: 13px;
+    font-weight: 700;
+    color: #64748b;
+    display: inline-block;
+}
+
+.complaintStatus{
+    position: absolute;
+    top: 18px;
+    right: 20px;
+
+    background: #fef3c7;
+    color: #d97706;
+    padding: 6px 14px;
+    border-radius: 999px;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+#name{
+    color: #1e293b;
+    margin-bottom: 20px;
+}
+
+.complaintCard p{
+    color: #475569;
+    margin: 14px 0;
+    line-height: 1.5;
+}
+
+#wardno ,#location ,#category ,#description , #submitted{
+    float: right;
+    color: #1e293b;
+    font-weight: 600;
+}
+
+/* create separators between rows */
+.complaintCard p:not(.complaintId):not(.complaintStatus){
+    padding-bottom: 10px;
+    border-bottom: 1px solid #f1f5f9;
+}
+
+.complaintCard p:last-child{
+    border-bottom: none;
+}
+
+#loader{
+    text-align: center;
+}
+

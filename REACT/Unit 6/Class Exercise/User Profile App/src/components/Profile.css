@@ -1,0 +1,68 @@
+.profileDetails {
+  width: 450px;
+  min-height: 350px;
+  margin: 30px auto;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+}
+
+.profileDetails:hover {
+  transform: translateY(-5px);
+}
+
+.profileDetails svg {
+  align-self: center;
+}
+
+.profileDetails h3 {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.profileDetails p {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  font-size: 18px;
+  color: #555;
+}
+
+body {
+  background-color: #f5f7fb;
+}
+
+.goBackBtn {
+  width: 85px;
+  height: 35px;
+  margin-left: 185px;
+  background-color: rgb(5, 154, 212);
+  color: white;
+  border-radius: 6px;
+  font-size: 1rem;
+  border: none;
+}
+
+.loading {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.email,
+.age,
+.address,
+.role {
+  font-weight: 500;
+  color: #222;
+}

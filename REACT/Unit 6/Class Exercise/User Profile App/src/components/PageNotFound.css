@@ -1,0 +1,12 @@
+.errorMsg{
+    width: 100vw;
+    height: 100vh;
+    background-color: yellow;
+    color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bolder;
+    flex-direction: column;
+    gap: 30px;
+}

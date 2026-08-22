@@ -1,0 +1,11 @@
+.todoContainer {
+  /* border: 2px solid black; */
+  margin: 20px;
+  color: black;
+  width: 330px;
+  height: 90px;
+  padding: 10px;
+  font-size: large;
+  background-color: #f2f2f2;
+  border-radius: 8px;
+}

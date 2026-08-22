@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    min-height: 92vh;
+    width: 100%;
+    background: #f4f7fb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 15px;
+}
+
+#form{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.formContainer{
+    width: 100%;
+    max-width: 700px;
+    background: white;
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.formContainer h1{
+    color: #1e293b;
+    margin-bottom: 5px;
+}
+
+.formContainer p{
+    color: #64748b;
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+
+.formContainer label{
+    font-weight: 600;
+    color: #334155;
+}
+
+.formEle,
+#description{
+    width: 100%;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    padding: 12px;
+    font-size: 15px;
+    outline: none;
+    transition: 0.3s;
+}
+
+.formEle:focus,
+#description:focus{
+    border-color: #2563eb;
+    box-shadow: 0 0 0 3px rgba(37,99,235,0.15);
+}
+
+#description{
+    min-height: 140px;
+    resize: vertical;
+}
+
+input[type="file"]{
+    padding: 10px;
+}
+
+.btnsContainer{
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.cancelBtn,
+#submitBtn{
+    border: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.cancelBtn{
+    background: #e5e7eb;
+    color: #374151;
+}
+
+.cancelBtn:hover{
+    background: #d1d5db;
+}
+
+#submitBtn{
+    background: #2563eb;
+    color: white;
+}
+
+#submitBtn:hover{
+    background: #1d4ed8;
+}
+

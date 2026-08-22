@@ -1,0 +1,68 @@
+.navbar {
+  width: 100vw;
+  height: 8vh;
+  /* border: 2px solid black; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  /* box-shadow: 0px 2px rgb(105, 102, 102); */
+}
+.logo {
+  color: #516bde;
+}
+
+a {
+  text-decoration: none;
+}
+.complaintBtnsContainer,
+.authBtnsContainer {
+  display: flex;
+  gap: 15px;
+  justify-content: space-evenly;
+}
+
+.complaintBtns {
+  width: 150px;
+  height: 46px;
+  font-size: large;
+  border-radius: 8px;
+  border: none;
+  color: #4a5568;
+
+  background-color: white;
+}
+
+.authBtnsContainer{
+  padding-right: 5px;
+}
+
+.authBtns {
+  width: 100%;
+  padding: 14px;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+  margin-top: 10px;
+}
+
+
+.authBtns:hover {
+  transform: translateY(-3px);
+}
+
+.complaintBtns:hover {
+  background-color: #667eea1a;
+  color: #667eea;
+}
+
+  #logoutBtn{
+    background: rgb(194, 38, 38);
+  }

@@ -1,0 +1,15 @@
+.feedbackContainer {
+  border: 2px solid white;
+  margin: 10px;
+  width: max-content;
+  height: max-content;
+  max-height: 45px;
+  padding: 10px;
+  border-radius: 8px;
+  background-color: rgb(49, 49, 49);
+}
+
+p{
+    color: white;
+    font-size: larger;
+}

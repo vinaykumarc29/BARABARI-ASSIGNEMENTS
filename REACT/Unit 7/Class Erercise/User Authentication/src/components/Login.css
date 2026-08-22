@@ -1,0 +1,42 @@
+/* div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+} */
+
+.loginConatiner {
+  width: 500px;
+  height: 300px;
+  border: 2px solid black;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  margin-left: 650px;
+  margin-top: 100px;
+  border-radius: 20px;
+  border: none;
+}
+
+#userNameField {
+  width: 310px;
+  height: 35px;
+  border-radius: 6px;
+  font-size: 1rem;
+  padding: 5px;
+  outline: none;
+}
+
+#submit {
+  width: 90px;
+  height: 37px;
+  background-color: blue;
+  color: white;
+  border-radius: 8px;
+  outline: none;
+  border: none;
+  font-size: 1rem;
+}

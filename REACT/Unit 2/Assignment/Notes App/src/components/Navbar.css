@@ -1,0 +1,14 @@
+*{
+    margin: 0;
+    padding:0;
+}
+
+.navbar{
+    width: 100vw;
+    height: 80px;
+    background-color:skyblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+}

@@ -1,0 +1,74 @@
+[
+  {
+    "id": 1,
+    "title": "React Fundamentals",
+    "category": "Web",
+    "description": "Learn components, props, state, hooks, and React application development."
+  },
+  {
+    "id": 2,
+    "title": "Advanced React",
+    "category": "Web",
+    "description": "Master Context API, custom hooks, React Router, and performance optimization."
+  },
+  {
+    "id": 3,
+    "title": "Node.js Backend Development",
+    "category": "Web",
+    "description": "Build REST APIs using Node.js, Express, and MongoDB."
+  },
+  {
+    "id": 4,
+    "title": "Machine Learning Basics",
+    "category": "AI",
+    "description": "Understand supervised learning, regression, classification, and model evaluation."
+  },
+  {
+    "id": 5,
+    "title": "Deep Learning with TensorFlow",
+    "category": "AI",
+    "description": "Create neural networks and train deep learning models using TensorFlow."
+  },
+  {
+    "id": 6,
+    "title": "Natural Language Processing",
+    "category": "AI",
+    "description": "Learn text processing, sentiment analysis, and transformer-based models."
+  },
+  {
+    "id": 7,
+    "title": "Data Analysis with Python",
+    "category": "Data Science",
+    "description": "Analyze datasets using NumPy, Pandas, and data visualization libraries."
+  },
+  {
+    "id": 8,
+    "title": "Statistics for Data Science",
+    "category": "Data Science",
+    "description": "Learn probability, hypothesis testing, and statistical analysis techniques."
+  },
+  {
+    "id": 9,
+    "title": "Data Visualization",
+    "category": "Data Science",
+    "description": "Create meaningful charts and dashboards using modern visualization tools."
+  },
+  {
+    "id": 10,
+    "title": "Cloud Computing Essentials",
+    "category": "Cloud",
+    "description": "Understand cloud architecture, deployment models, and cloud services."
+  },
+  {
+    "id": 11,
+    "title": "AWS Fundamentals",
+    "category": "Cloud",
+    "description": "Learn EC2, S3, IAM, and core AWS services for cloud applications."
+  },
+  {
+    "id": 12,
+    "title": "Cyber Security Basics",
+    "category": "Security",
+    "description": "Explore network security, encryption, authentication, and common cyber threats."
+  }
+]

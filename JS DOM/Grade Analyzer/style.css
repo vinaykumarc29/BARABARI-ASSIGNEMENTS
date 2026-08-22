@@ -1,0 +1,170 @@
+*{
+    /* box-sizing: border-box; */
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   
+}
+body{
+    background-color: #f5f5f5;
+
+}
+
+
+.container{
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+
+}
+
+.inner-container{
+    /* min-height: 100%;     */
+    width: 50%;
+    /* background-color: red; */
+    border: 2px solid #fff;
+    margin-top: 80px;
+    text-align: center;
+    background-color: #ffffff;
+    border-radius: 8px;
+
+}
+
+
+h2{
+    color: rgb(15, 171, 223);
+    font-weight: bold;
+}
+
+.inner-container h1 {
+    margin-top: 15px;
+    color: black;
+}
+
+.input-container{
+    width: 95%;
+    height: 3rem;
+    margin: 2.5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap:2rem;
+    align-items: center;
+    border-radius: 5px;
+}
+
+#input-grade{
+    height: 70%;
+    width: 50%;
+    font-size: 1rem;
+    padding-left: 5px;
+}
+
+.btn{
+    width: max-content;
+    padding: 5px;
+    min-width: 5rem;
+    height: 75%;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    color: white;
+    font-size: bold;
+    font-size: 1rem;
+}
+
+.add-grade{
+    background-color: #3498db;
+}
+.analyze-grade{
+    background-color: #27ae60;
+}
+.reset{
+    background-color: #e74c3c;
+}
+
+
+
+.current-grades-container , .grades-statistics-container , .sorted-grades-container ,.passing-grades-container{
+    margin: 20px;
+    border: 2px solid #e9ecef;
+    padding: 20px;
+    text-align: left;
+    max-height: 250px;
+    overflow-y: auto;
+    border-radius: 8px;
+    background-color: white;
+}
+
+.current-grades-container h2{
+    color:black;
+}
+
+.analysis-container{
+    border: 2px solid #e9ecef;
+    width: 95%;
+    margin-left: 1%;
+    text-align: left;
+    padding: 10px;
+    background-color: #eaf7fd;
+    border-radius: 8px;
+}
+
+#analysis-container-heading {
+    color: black;
+    margin-top: 10px;
+}
+
+.current-grades-container div  , .grades-statistics div ,.sorted-grades div ,.passing-grades div{
+    height: 3rem;
+    display: flex;
+    font-size: 1.25rem;
+    display: flex;
+    align-items: center;
+    padding: 2px;
+    background-color: rgba(255, 255, 255, 0.713);
+}
+
+.marks , .total-grades , .highest-grade ,.lowest-grade , .average-grade{
+    width: max-content;
+    height: max-content;
+    background-color: red;
+    margin-left: 10px;
+    color: white;
+    padding: 5px;
+    border-radius: 8px;
+    border-bottom: none;
+}
+
+.border-pass{
+    background-color: #f39c12;
+}
+.average{
+    background-color: #3498db;
+}
+.distinction{
+    background-color: #27ae60;
+}
+
+.grades-statistics-container{
+    overflow: hidden;
+}
+
+
+.current-grades-container h2{
+    margin-bottom: 5px;
+    background-color:#f8f9fa;
+}
+
+.passing-grades{
+    margin: 10px;
+}
+.passing-rate{
+    margin: 5px;
+}
+
+.hidden{
+    display: none;
+}

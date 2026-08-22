@@ -1,0 +1,73 @@
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  /* overflow: hidden; */
+}
+body{
+  background-color: rgb(49, 47, 47);
+  /* overflow: hidden; */
+
+}
+
+h1 ,h2{
+  color: #ffffff;
+}
+.formContainer {
+  width: 315px;
+  height: max-content;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 8px;
+  font-size: 1rem;
+  background-color: #ffffff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+
+
+label {
+  display: block;
+  margin: 2px;
+  font-size: large;
+}
+
+#gender-label,
+#terms-label {
+  display: inline;
+}
+
+.gender {
+  margin-bottom: 10px;
+}
+
+#termsAndConditions {
+  margin-top: 8px;
+}
+
+.form-ele {
+  width: 285px;
+  height: 34px;
+  font-size: 1rem;
+  outline: none;
+  padding-left: 2px;
+  margin-bottom: 10px;
+}
+
+#submitBtn {
+  margin: 30px;
+  width: 80%;
+  height: 30px;
+  border-radius: 8px;
+  outline: none;
+  border: none;
+  font-size: 1rem;
+  color: white;
+  background-color: rgb(39, 38, 38);
+}
+
+.errorMessage{
+  color: red;
+}

@@ -1,0 +1,72 @@
+/* Basic reset to ensure consistent styling across all browsers */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Centers the main container on the screen with a light background */
+body {
+  background-color: #f4f7f6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* The main white card holding the app */
+.container {
+  background-color: #ffffff;
+  width: 100%;
+  max-width: 450px;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+}
+
+h1 {
+  text-align: center;
+  color: #2c3e50;
+  margin-bottom: 25px;
+  font-size: 2.2rem;
+}
+
+/* Flexbox keeps the input and button side-by-side */
+.todoInputContainer {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+#todoInputField {
+  flex: 1; /* Makes the input take up the remaining space */
+  padding: 12px 15px;
+  border: 1px solid #dcdde1;
+  border-radius: 8px;
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+/* Highlights the input border when clicked */
+#todoInputField:focus {
+  border-color: #0097e6;
+}
+
+#addTodoBtn {
+  padding: 12px 20px;
+  background-color: #0097e6;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#addTodoBtn:hover {
+  background-color: #007fba;
+}

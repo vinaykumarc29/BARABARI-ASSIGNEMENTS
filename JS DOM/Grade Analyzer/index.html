@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Grade Anlyzer</title>
+</head>
+<body>
+
+    <div class="container">
+        <div class="inner-container">
+            <h1>Grade Analyzer</h1>
+            <p>Enter student grades (0-100) and analyze the results</p>
+            <div class="input-container">
+                <input type="number" name="input-grade" placeholder="Enter Your grade (0-100)" id="input-grade">
+                <button class="add-grade btn">Add Grade</button>
+                <button class="analyze-grade btn">Analyze Grade</button>
+                <button class="reset btn">Reset</button>
+            </div>
+
+            <!-- // div that displays user entered grades -->
+            <div class="current-grades-container">
+                <h2>Current Grades</h2>
+                <!-- <div>Grade1: <span class="marks">20</span></div>  -->
+              
+            </div>
+
+            <!-- // div that comes after clicking analyse -->
+
+            <div class="analysis-container hidden">
+                <h2 id="analysis-container-heading">Analyze Grades</h2>
+
+                <div class="grades-statistics-container">
+                    <div class="grades-statistics"><h2>Basic Statistics</h2>
+                        <div><p>Total Grades :<span class="total-grades"></span></p></div>
+                        <div><p>Highest Grade :<span class="highest-grade"></span></p></div>
+                        <div><p>Lowest Grade :<span class="lowest-grade"></span></p></div>
+                        <div><p>Average Grade :<span class="average-grade"></span></p></div>
+                    </div>
+                </div> 
+
+                <div class="sorted-grades-container">
+                    <div class="sorted-grades"><h2>
+                        Sorted Grades (low to high)</h2>
+                        <!-- <div>grade1 <span class='marks '> 50</span></div> -->
+                     
+                    </div>
+                </div>
+
+                <div class="passing-grades-container">
+                    <h2>Passing Grades (>40 Only)</h2>
+                    <div class="passing-grades">
+                       
+                    </div>
+                    <p>Passing Rate : <span class="passing-rate " ></span></p>
+                    <p>Average of Passing Rate : <span class="average-passing-rate " ></span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
